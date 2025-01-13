@@ -26,3 +26,6 @@ from jstruct import struct, JStruct, JList, JDict
 """
 
 from jstruct.types import struct, JStruct, JList, JDict, REQUIRED
+from jstruct.utils import asdict
+
+__all__ = ['struct', 'JStruct', 'JList', 'JDict', 'REQUIRED', 'asdict']

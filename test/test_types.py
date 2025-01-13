@@ -1,7 +1,6 @@
 import pytest
-import attr
 from typing import List, Dict
-from jstruct import struct, JList, JDict, JStruct, REQUIRED
+from jstruct import struct, JList, JDict, JStruct, REQUIRED, asdict
 
 
 class TestClass(object):
@@ -77,7 +76,7 @@ class TestClass(object):
             ]
         }
 
-        assert data == attr.asdict(role_models)
+        assert data == asdict(role_models)
 
     def test_nested_models_required_validation(self):
         payload = {

@@ -15,9 +15,7 @@ setup(
       author_email='danielk.developer@gmail.com',
       license='MIT',
       packages=['jstruct'],
-      install_requires=[
-            'attrs'
-      ],
+      install_requires=[],
       zip_safe=False,
       classifiers=[
             "Programming Language :: Python :: 3",
